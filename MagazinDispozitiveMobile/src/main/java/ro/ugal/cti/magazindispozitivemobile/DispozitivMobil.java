@@ -17,4 +17,13 @@ public class DispozitivMobil {
         this.brand=brand;
         this.pret=pret;
     }
+    public DispozitivMobil(DispozitivMobil dm)
+    {
+        this.brand=dm.brand;
+        this.pret=dm.pret;
+    }
+    @Override 
+    public String toString(){
+        return "Dispozitiv mobil, brand "+brand+", pret: "+pret;
+    }
 }
