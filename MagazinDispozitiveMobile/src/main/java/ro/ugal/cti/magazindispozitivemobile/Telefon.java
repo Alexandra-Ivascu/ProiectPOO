@@ -12,25 +12,25 @@ public class Telefon extends DispozitivMobil {
     private boolean dualSim;
     private boolean suport5G;
     private int nrCamere;
-    private int cameraPrincipalMP;
+    private int cameraPrincipalaMP;
 
     public Telefon() {}
 
     public Telefon(String brand, double pret, boolean dualSim, boolean suport5G,
-                   int nrCamere, int cameraPrincipalMP) {
+                   int nrCamere, int cameraPrincipalaMP) {
         super(brand, pret);
         this.dualSim = dualSim;
         this.suport5G = suport5G;
         this.nrCamere = nrCamere;
-        this.cameraPrincipalMP = cameraPrincipalMP;
+        this.cameraPrincipalaMP = cameraPrincipalaMP;
     }
 
-    public Telefon(Telefon other) {
-        super(other);
-        this.dualSim = other.dualSim;
-        this.suport5G = other.suport5G;
-        this.nrCamere = other.nrCamere;
-        this.cameraPrincipalMP = other.cameraPrincipalMP;
+    public Telefon(Telefon tel) {
+        super(tel);
+        this.dualSim = tel.dualSim;
+        this.suport5G = tel.suport5G;
+        this.nrCamere = tel.nrCamere;
+        this.cameraPrincipalaMP = tel.cameraPrincipalaMP;
     }
 
     @Override
@@ -39,6 +39,6 @@ public class Telefon extends DispozitivMobil {
                ", Telefon{dualSim=" + dualSim +
                ", suport5G=" + suport5G +
                ", nrCamere=" + nrCamere +
-               ", cameraPrincipalMP=" + cameraPrincipalMP + "}";
+               ", cameraPrincipalaMP=" + cameraPrincipalaMP + "}";
     }
 }

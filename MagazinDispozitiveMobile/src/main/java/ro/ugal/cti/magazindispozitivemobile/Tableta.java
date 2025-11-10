@@ -25,12 +25,12 @@ public class Tableta extends DispozitivMobil {
         this.suportaSIM = suportaSIM;
     }
 
-    public Tableta(Tableta other) {
-        super(other);
-        this.areStylus = other.areStylus;
-        this.tastaturaDetasabila = other.tastaturaDetasabila;
-        this.refreshRate = other.refreshRate;
-        this.suportaSIM = other.suportaSIM;
+    public Tableta(Tableta tab) {
+        super(tab);
+        this.areStylus = tab.areStylus;
+        this.tastaturaDetasabila = tab.tastaturaDetasabila;
+        this.refreshRate = tab.refreshRate;
+        this.suportaSIM = tab.suportaSIM;
     }
 
     @Override
