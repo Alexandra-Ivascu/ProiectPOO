@@ -11,4 +11,10 @@ package ro.ugal.cti.magazindispozitivemobile;
 public class DispozitivMobil {
     private String brand;
     private double pret;
+    public DispozitivMobil(){}
+    public DispozitivMobil(String brand,double pret)
+    {
+        this.brand=brand;
+        this.pret=pret;
+    }
 }
