@@ -62,4 +62,27 @@ public class BrataraFitness extends DispozitivMobil {
         
         return mesaj;
     }
+     public int numaraFunctionalitati()
+    {
+        int nr=0;
+        if(this.monitorizareCalorii)
+            nr++;
+        if(this.monitorizareTensiune)
+            nr++;
+        if(this.monitorizarePuls)
+            nr++;
+        if(this.monitorizareSpo2)
+            nr++;
+        if(this.monitorizareSomn)
+            nr++;
+        if(this.pedometru)
+           nr++;
+        if(this.rezistentaApa)
+           nr++;
+        return nr;
+    }
+     public boolean brandValid()
+     {
+         return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
+     }
 }
