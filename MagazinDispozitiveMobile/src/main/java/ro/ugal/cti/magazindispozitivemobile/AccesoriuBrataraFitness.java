@@ -11,15 +11,17 @@ package ro.ugal.cti.magazindispozitivemobile;
 public class AccesoriuBrataraFitness extends DispozitivMobil {
     private String culoare;
     private String material;
+    private boolean universal;
     private int marime;
     public AccesoriuBrataraFitness(){
     super();}
-    public AccesoriuBrataraFitness(String brand,double pret,String culoare,String material,int marime)
+    public AccesoriuBrataraFitness(String brand,double pret,String culoare,String material,int marime,boolean universal)
     {
         super(brand,pret);
         this.material=material;
         this.marime=marime;
         this.culoare=culoare;
+        this.universal=universal;
     }
     public AccesoriuBrataraFitness(AccesoriuBrataraFitness a)
     {
@@ -27,10 +29,21 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
         this.material=a.material;
         this.marime=a.marime;
         this.culoare=a.culoare;
+        this.universal=a.universal;
     }
     @Override
     public String toString()
     {
         return super.toString()+". Accesoriu bratara fitness, culoare "+culoare+", marime"+marime+", material "+material;
     }
+    public int numaraFunctionalitati()
+    { int n=0;
+        if(universal)
+            n++;
+        return n;
+    }
+    public boolean brandValid()
+     {
+         return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
+     }
 }
