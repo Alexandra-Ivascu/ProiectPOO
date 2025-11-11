@@ -33,8 +33,10 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
     }
     @Override
     public String toString()
-    {
-        return super.toString()+". Accesoriu bratara fitness, culoare "+culoare+", marime"+marime+", material "+material;
+    {   String u=" ";
+        if(universal)
+          u="universal, ";
+        return super.toString()+". Accesoriu bratara fitness,"+u+"culoare "+culoare+", marime "+marime+", material "+material;
     }
     public int numaraFunctionalitati()
     { int n=0;
