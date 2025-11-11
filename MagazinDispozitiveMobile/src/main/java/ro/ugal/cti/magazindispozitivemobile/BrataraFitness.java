@@ -40,6 +40,62 @@ public class BrataraFitness extends DispozitivMobil {
         this.pedometru=bf.pedometru;
         this.rezistentaApa=bf.rezistentaApa;
     }
+    public boolean getMonitorizareSomn()
+    {
+        return monitorizareSomn;
+    }
+    public boolean getMonitorizareTensiune()
+    {
+        return monitorizareTensiune;
+    }
+    public boolean getMonitorizarePuls()
+    {
+        return monitorizareSpo2;
+    }
+    public boolean getMonitorizareCalorii()
+    {
+        return monitorizareCalorii;
+    }
+    public boolean getMonitorizareSpo2()
+    {
+        return monitorizareSpo2;
+    }
+    public boolean getPedometru()
+    {
+        return pedometru;
+    }
+    public boolean getRezistentaApa()
+    {
+        return rezistentaApa;
+    }
+    public void setMonitorizareTensiune(boolean tensiune)
+    {
+        this.monitorizareTensiune=tensiune;
+    }
+    public void setMonitorizareCalorii(boolean calorii)
+    {
+        this.monitorizareCalorii=calorii;
+    }
+    public void setMonitorizarePuls(boolean puls)
+    {
+        this.monitorizarePuls=puls;
+    }
+    public void setMonitorizareSpo2(boolean spo2)
+    {
+        this.monitorizareSpo2=spo2;
+    }
+    public void setMonitorizareSomn(boolean somn)
+    {
+        this.monitorizareSomn=somn;
+    }
+    public void setRezistentaApa(boolean rezistentaApa)
+    {
+        this.rezistentaApa=rezistentaApa;
+    }
+    public void setPedometru(boolean pedometru)
+    {
+        this.pedometru=pedometru;
+    }
     @Override
     public String toString()
     {
