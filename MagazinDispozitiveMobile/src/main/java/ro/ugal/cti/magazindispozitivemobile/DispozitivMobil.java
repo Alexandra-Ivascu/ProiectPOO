@@ -26,6 +26,12 @@ package ro.ugal.cti.magazindispozitivemobile;
     public String toString(){
         return "Dispozitiv mobil, brand "+brand+", pret: "+pret;
     }
-    abstract public int numaraFunctionalitati();
+    //abstract public int numaraFunctionalitati();
+    //abstract public boolean brandValid();
+    public String getBrand()
+    {
+        return brand;
+    }
+    
     
 }
