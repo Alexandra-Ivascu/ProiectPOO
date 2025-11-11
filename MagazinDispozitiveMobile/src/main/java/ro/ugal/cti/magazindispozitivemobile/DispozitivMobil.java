@@ -8,7 +8,7 @@ package ro.ugal.cti.magazindispozitivemobile;
  *
  * @author ai402
  */
-public class DispozitivMobil {
+ abstract public class DispozitivMobil {
     private String brand;
     private double pret;
     public DispozitivMobil(){}
@@ -26,4 +26,6 @@ public class DispozitivMobil {
     public String toString(){
         return "Dispozitiv mobil, brand "+brand+", pret: "+pret;
     }
+    abstract public int numaraFunctionalitati();
+    
 }
