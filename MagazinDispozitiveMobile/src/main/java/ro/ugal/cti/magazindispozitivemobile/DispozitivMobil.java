@@ -24,13 +24,21 @@ package ro.ugal.cti.magazindispozitivemobile;
     }
     @Override 
     public String toString(){
-        return "Dispozitiv mobil, brand "+brand+", pret: "+pret;
+        return "Dispozitiv mobil: brand: "+brand+", pret: "+pret+", ";
     }
     //abstract public int numaraFunctionalitati();
     //abstract public boolean brandValid();
     public String getBrand()
     {
         return brand;
+    }
+    
+    public double getPret()
+    {
+        
+        
+        
+        return pret;
     }
     
     
