@@ -80,5 +80,6 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
     public boolean brandValid()
      {
          return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
-     }   
+     }
+    
 }
