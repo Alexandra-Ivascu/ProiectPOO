@@ -31,6 +31,39 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
         this.culoare=a.culoare;
         this.universal=a.universal;
     }
+    public String getCuloare()
+    {
+        return culoare;
+    }
+    public String getMaterial()
+    {
+        return material;
+    }
+    public int getMarime()
+    {
+       return marime;  
+    }
+    public boolean getUniversal()
+    {
+        return universal;
+    }
+    public void setCuloare(String culoare)
+    {
+        this.culoare=culoare;
+    }
+    public void setMarime(int marime)
+    {
+        this.marime=marime;
+    }
+    public void setMaterial(String material)
+    {
+        this.material=material;
+    }
+    public void setUniversal(boolean universal)
+    {
+        this.universal=universal;
+    }
+ 
     @Override
     public String toString()
     {   String u=" ";
@@ -47,5 +80,5 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
     public boolean brandValid()
      {
          return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
-     }
+     }   
 }
