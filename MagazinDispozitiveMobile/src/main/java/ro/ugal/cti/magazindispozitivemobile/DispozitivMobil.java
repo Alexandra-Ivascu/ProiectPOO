@@ -40,6 +40,14 @@ package ro.ugal.cti.magazindispozitivemobile;
         
         return pret;
     }
+    public void setBrand(String brand)
+    {
+        this.brand=brand;
+    }
+    public void setPret(double pret)
+    {
+        this.pret=pret;
+    }
     
     
 }
