@@ -99,7 +99,9 @@ public class BrataraFitness extends DispozitivMobil {
     @Override
     public String toString()
     {
-        String mesaj=super.toString()+" .Bratara fitness cu functii de: ";
+        String mesaj=super.toString()+"Bratara fitness ";
+        if(this.numaraFunctionalitati()!=0)
+            mesaj=mesaj+"cu functii de: ";
         if(this.monitorizareCalorii)
             mesaj=mesaj+"monitorizare a caloriilor ";
         if(this.monitorizareTensiune)
@@ -111,7 +113,7 @@ public class BrataraFitness extends DispozitivMobil {
         if(this.monitorizareSomn)
             mesaj=mesaj+"monitorizare a somnului ";
         if(this.pedometru)
-            mesaj=mesaj+"pedometru";
+            mesaj=mesaj+"pedometru ";
         if(this.rezistentaApa)
             mesaj=mesaj+"resistenta la apa";
      
