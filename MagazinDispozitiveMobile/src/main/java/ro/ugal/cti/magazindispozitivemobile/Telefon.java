@@ -9,36 +9,72 @@ package ro.ugal.cti.magazindispozitivemobile;
  * @author Dorina
  */
 public class Telefon extends DispozitivMobil {
+
     private boolean dualSim;
     private boolean suport5G;
     private int nrCamere;
-    private int cameraPrincipalaMP;
+    private int cameraPrincipalMP;
 
-    public Telefon() {}
+    public Telefon() {
+        super();
+    }
 
-    public Telefon(String brand, double pret, boolean dualSim, boolean suport5G,
-                   int nrCamere, int cameraPrincipalaMP) {
+    public Telefon(String brand, double pret,
+                   boolean dualSim, boolean suport5G,
+                   int nrCamere, int cameraPrincipalMP) {
         super(brand, pret);
         this.dualSim = dualSim;
         this.suport5G = suport5G;
         this.nrCamere = nrCamere;
-        this.cameraPrincipalaMP = cameraPrincipalaMP;
+        this.cameraPrincipalMP = cameraPrincipalMP;
     }
 
-    public Telefon(Telefon tel) {
-        super(tel);
-        this.dualSim = tel.dualSim;
-        this.suport5G = tel.suport5G;
-        this.nrCamere = tel.nrCamere;
-        this.cameraPrincipalaMP = tel.cameraPrincipalaMP;
+    public Telefon(Telefon other) {
+        super(other); 
+        this.dualSim = other.dualSim;
+        this.suport5G = other.suport5G;
+        this.nrCamere = other.nrCamere;
+        this.cameraPrincipalMP = other.cameraPrincipalMP;
+    }
+
+    public boolean isDualSim() {
+        return dualSim;
+    }
+
+    public void setDualSim(boolean dualSim) {
+        this.dualSim = dualSim;
+    }
+
+    public boolean isSuport5G() {
+        return suport5G;
+    }
+
+    public void setSuport5G(boolean suport5G) {
+        this.suport5G = suport5G;
+    }
+
+    public int getNrCamere() {
+        return nrCamere;
+    }
+
+    public void setNrCamere(int nrCamere) {
+        this.nrCamere = nrCamere;
+    }
+
+    public int getCameraPrincipalMP() {
+        return cameraPrincipalMP;
+    }
+
+    public void setCameraPrincipalMP(int cameraPrincipalMP) {
+        this.cameraPrincipalMP = cameraPrincipalMP;
     }
 
     @Override
     public String toString() {
-        return super.toString() +
-               ", Telefon{dualSim=" + dualSim +
-               ", suport5G=" + suport5G +
-               ", nrCamere=" + nrCamere +
-               ", cameraPrincipalaMP=" + cameraPrincipalaMP + "}";
+        return super.toString()
+                + ", Telefon: dualSim = " + dualSim
+                + ", suport5G = " + suport5G
+                + ", nrCamere = " + nrCamere
+                + ", cameraPrincipalMP = " + cameraPrincipalMP;
     }
 }
