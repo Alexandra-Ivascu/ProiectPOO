@@ -11,7 +11,10 @@ package ro.ugal.cti.magazindispozitivemobile;
 public class DispozitivMobil {
     private String brand;
     private double pret;
-    public DispozitivMobil(){}
+    public DispozitivMobil(){
+    this.brand="Necunoscut";
+    this.pret=100.00;
+    }
     public DispozitivMobil(String brand,double pret)
     {
         this.brand=brand;
@@ -24,6 +27,29 @@ public class DispozitivMobil {
     }
     @Override 
     public String toString(){
-        return "Dispozitiv mobil, brand "+brand+", pret: "+pret;
+        return "Dispozitiv mobil: brand: "+brand+", pret: "+pret+", ";
     }
+   
+    public String getBrand()
+    {
+        return brand;
+    }
+    
+    public double getPret()
+    {
+        
+        
+        
+        return pret;
+    }
+    public void setBrand(String brand)
+    {
+        this.brand=brand;
+    }
+    public void setPret(double pret)
+    {
+        this.pret=pret;
+    }
+    
+    
 }
