@@ -51,6 +51,22 @@ public class MagazinDispozitiveMobile {
         ab.add(ab10);
         for(int i=0;i<ab.size();i++)
             System.out.println(i+"."+ab.get(i));
+        System.out.println();
         
+        DispozitivMobil d1,d2,d3,d4,d5,d6,d7,d8,d9,d10;
+        d1=new DispozitivMobil();
+        d2=new DispozitivMobil("Xiaomi",149.99);
+        d3=new DispozitivMobil(d2);
+        d4=new DispozitivMobil("Samsung",749.99);
+        d5=new DispozitivMobil("Apple",899.99);
+        d6=new DispozitivMobil("Fitbit",29.99);
+        d7=new DispozitivMobil("Xiaomi",139.99);
+        d8=new DispozitivMobil("Motorola",649.99);
+        d9=new DispozitivMobil("HUAWEI",120.99);
+        d10=new DispozitivMobil("Apple",1149.99);
+        DispozitivMobil[] d={d1,d2,d3,d4,d5,d6,d7,d8,d9,d10};
+        for(int i=0;i<d.length;i++)
+            System.out.println(i+"."+d[i]);
+        System.out.println();
     }
 }
