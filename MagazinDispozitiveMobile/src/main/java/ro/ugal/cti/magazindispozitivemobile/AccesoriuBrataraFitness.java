@@ -14,7 +14,10 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
     private boolean universal;
     private int marime;
     public AccesoriuBrataraFitness(){
-    super();}
+    super();
+    culoare="Necunoscuta";
+    material="Necunoscut";
+    }
     public AccesoriuBrataraFitness(String brand,double pret,String culoare,String material,int marime,boolean universal)
     {
         super(brand,pret);
@@ -68,8 +71,8 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
     public String toString()
     {   String u=" ";
         if(universal)
-          u="universal, ";
-        return super.toString()+". Accesoriu bratara fitness,"+u+"culoare "+culoare+", marime "+marime+", material "+material;
+          u=" universal, ";
+        return super.toString()+" Accesoriu bratara fitness,"+u+"culoare "+culoare+", marime "+marime+", material "+material;
     }
     public int numaraFunctionalitati()
     { int n=0;
