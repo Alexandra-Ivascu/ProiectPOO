@@ -139,8 +139,8 @@ public class BrataraFitness extends DispozitivMobil {
            nr++;
         return nr;
     }
-     public boolean brandValid()
+     public String tipDispozitiv()
      {
-         return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
+         return "bratara fitness";
      }
 }
