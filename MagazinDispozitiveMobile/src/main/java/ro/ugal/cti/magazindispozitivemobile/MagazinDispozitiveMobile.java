@@ -3,7 +3,7 @@
  */
 
 package ro.ugal.cti.magazindispozitivemobile;
-
+import java.util.ArrayList;
 /**
  *
  * @author ai402
@@ -25,7 +25,32 @@ public class MagazinDispozitiveMobile {
         BrataraFitness[] b={b1,b2,b3,b4,b5,b6,b7,b8,b9,b10};
         for(int i=0;i<b.length;i++)
             System.out.println(i+"."+b[i]);
+        System.out.println();
         
+        AccesoriuBrataraFitness ab1,ab2,ab3,ab4,ab5,ab6,ab7,ab8,ab9,ab10;
+        ab1=new AccesoriuBrataraFitness();
+        ab2=new AccesoriuBrataraFitness("Xiaomi",20.34,"negru","inox",140,false);
+        ab3=new AccesoriuBrataraFitness(ab2);
+        ab4=new AccesoriuBrataraFitness("Samsung",40.25,"gri","silicon",150,true);
+        ab5=new AccesoriuBrataraFitness("Xiaomi",25.24,"negru","silicon",160,false);
+        ab6=new AccesoriuBrataraFitness("HUAWEI",30.00,"albastru","plastic",170,true);
+        ab7=new AccesoriuBrataraFitness("Fitbit",21.34,"negru","silicon",130,false);
+        ab8=new AccesoriuBrataraFitness("Samsung",26.30,"roz","silicon",140,true);
+        ab9=new AccesoriuBrataraFitness(ab4);
+        ab10=new AccesoriuBrataraFitness(ab7);
+        ArrayList<AccesoriuBrataraFitness> ab=new ArrayList<AccesoriuBrataraFitness>();
+        ab.add(ab1);
+        ab.add(ab2);
+        ab.add(ab3);
+        ab.add(ab4);
+        ab.add(ab5);
+        ab.add(ab6);
+        ab.add(ab7);
+        ab.add(ab8);
+        ab.add(ab9);
+        ab.add(ab10);
+        for(int i=0;i<ab.size();i++)
+            System.out.println(i+"."+ab.get(i));
         
     }
 }
