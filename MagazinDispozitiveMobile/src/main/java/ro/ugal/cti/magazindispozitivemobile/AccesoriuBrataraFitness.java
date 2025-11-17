@@ -8,7 +8,7 @@ package ro.ugal.cti.magazindispozitivemobile;
  *
  * @author ai402
  */
-public class AccesoriuBrataraFitness extends DispozitivMobil {
+public class AccesoriuBrataraFitness extends DispozitivMobil implements Proprietati {
     private String culoare;
     private String material;
     private boolean universal;
@@ -80,9 +80,9 @@ public class AccesoriuBrataraFitness extends DispozitivMobil {
             n++;
         return n;
     }
-    public boolean brandValid()
+    public String tipDispozitiv()
      {
-         return (this.getBrand().equals("Xiaomi") || this.getBrand().equals("Samsung"));
+         return "Accesoriu bratara fitness";
      }
     
 }
