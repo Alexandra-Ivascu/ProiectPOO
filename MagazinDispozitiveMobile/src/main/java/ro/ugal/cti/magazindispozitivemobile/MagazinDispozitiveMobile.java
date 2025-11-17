@@ -68,5 +68,50 @@ public class MagazinDispozitiveMobile {
         for(int i=0;i<d.length;i++)
             System.out.println(i+"."+d[i]);
         System.out.println();
+       
+        Telefon t1, t2, t3, t4, t5, t6, t7, t8, t9, t10;
+        t1 = new Telefon("Samsung", 3000, true, true, 3, 50);
+        t2 = new Telefon("Apple", 5000, true, true, 2, 48);
+        t3 = new Telefon(t1);
+        t4 = new Telefon("Xiaomi", 1500, true, false, 3, 64);
+        t5 = new Telefon("Huawei", 2200, false, false, 2, 40);
+        t6 = new Telefon("Nokia", 800, false, false, 1, 13);
+        t7 = new Telefon("Motorola", 1300, true, false, 2, 48);
+        t8 = new Telefon("Realme", 1700, true, true, 3, 50);
+        t9 = new Telefon("Google", 4500, true, true, 2, 50);
+        t10 = new Telefon(t2);
+
+        ArrayList<Object> telefoane = new ArrayList<>();
+        telefoane.add(t1); telefoane.add(t2); telefoane.add(t3); telefoane.add(t4); telefoane.add(t5);
+        telefoane.add(t6); telefoane.add(t7); telefoane.add(t8); telefoane.add(t9); telefoane.add(t10);
+
+        System.out.println("Vector Telefon (ArrayList<Object>):");
+        for (int i = 0; i < telefoane.size(); i++) {
+            System.out.println(i + ". " + telefoane.get(i));
+        }
+        System.out.println();
+
+
+        Tableta tb1, tb2, tb3, tb4, tb5, tb6, tb7, tb8, tb9, tb10;
+        tb1 = new Tableta();
+        tb2 = new Tableta("Samsung", 2500, true, true, 120, true);
+        tb3 = new Tableta(tb2);
+        tb4 = new Tableta("Apple", 4000, true, false, 120, false);
+        tb5 = new Tableta("Lenovo", 1500, false, false, 60, true);
+        tb6 = new Tableta("Huawei", 1800, true, false, 90, false);
+        tb7 = new Tableta("Xiaomi", 1600, true, false, 120, false);
+        tb8 = new Tableta("Microsoft", 3500, true, true, 60, true);
+        tb9 = new Tableta("Amazon", 900, false, false, 60, false);
+        tb10 = new Tableta(tb4);
+
+        Object[] tablete = { tb1, tb2, tb3, tb4, tb5, tb6, tb7, tb8, tb9, tb10 };
+
+        System.out.println("Vector Tableta (Object[]):");
+        for (int i = 0; i < tablete.length; i++) {
+            System.out.println(i + ". " + tablete[i]);
+        }
+        System.out.println();
     }
+    
+   
 }
