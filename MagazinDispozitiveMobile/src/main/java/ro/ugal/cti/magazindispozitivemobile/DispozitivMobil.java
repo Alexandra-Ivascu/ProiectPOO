@@ -13,7 +13,7 @@ package ro.ugal.cti.magazindispozitivemobile;
     private double pret;
     public DispozitivMobil(){
     this.brand="Necunoscut";
-    this.pret=100;
+    this.pret=100.00;
     }
     public DispozitivMobil(String brand,double pret)
     {
