@@ -9,6 +9,6 @@ package ro.ugal.cti.magazindispozitivemobile;
  * @author ai402
  */
 public interface Proprietati {
-    abstract public int numaraFunctionalitati();
-    abstract public String tipDispozitiv();
+    public int numaraFunctionalitati();
+    public String tipDispozitiv();
 }
