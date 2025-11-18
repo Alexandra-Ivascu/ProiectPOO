@@ -111,6 +111,48 @@ public class MagazinDispozitiveMobile {
             System.out.println(i + ". " + tablete[i]);
         }
         System.out.println();
+        
+        
+        Smartwatch s1=new Smartwatch("HUAWEI",499.00,"negru","Midnight","Android");
+        Smartwatch s2=new Smartwatch("XIAOMI",199.00,"negru","Redmi Watch 5","Android/iOS");
+        Smartwatch s3=new Smartwatch("APPLE",1353.99,"auriu","Apple Watch SE 3","iOS");
+        Smartwatch s4=new Smartwatch("HAMA",299.99,"roz","HAMA 5000,","Android/iOS");
+        Smartwatch s5=new Smartwatch("SAMSUNG",914.25,"gri inchis","Galaxy Watch7","Android");
+        Smartwatch s6=new Smartwatch("AMAZFIT",499.00,"alb","Cheetah Square","Android/iOS");
+        Smartwatch s7=new Smartwatch("CANYON",77.10,"rose-gold","Semifreddo SW-61","Android/iOS");
+        Smartwatch s8=new Smartwatch("CANYON",77.10,"mov","Semifreddo SW-61","Android/iOS");
+        Smartwatch s9=new Smartwatch("MYRIA",73.35,"roz","MY9525PK","Android/iOS");
+        Smartwatch s10=new Smartwatch("PROMATE",499.90,"negru","XWatch-US13","Andorid/iOS");
+         
+        AccesoriiSmartwatch as1=new AccesoriiSmartwatch("BEST ACCESORIES",39.89,"silicon","curea");
+        AccesoriiSmartwatch as2=new AccesoriiSmartwatch("AXROAD MALL",18.00,"plastic","incarcator magnetic USB");
+        AccesoriiSmartwatch as3=new AccesoriiSmartwatch("OEM",14.83,"policarbonat/sticla securizata","carcasa");
+        AccesoriiSmartwatch as4=new AccesoriiSmartwatch("CASEY STUDIOS",47.92,"metal","curea");
+        AccesoriiSmartwatch as5=new AccesoriiSmartwatch("CASEY STUDIOS",31.91,"policarbonat","husa protectie");
+        AccesoriiSmartwatch as6=new AccesoriiSmartwatch("JENUOS",12.00,"silicon","folie protectie");
+        AccesoriiSmartwatch as7=new AccesoriiSmartwatch("APPLE",193.97,"plastic","AirTag ");
+        AccesoriiSmartwatch as8=new AccesoriiSmartwatch("SAMSUNG",299.50,"piele ecologica","bratara");
+        AccesoriiSmartwatch as9=new AccesoriiSmartwatch("GARMIN",107.99,"plastic","cablu securizare");
+        AccesoriiSmartwatch as10=new AccesoriiSmartwatch("APPLE",249.00,"textil, otel inoxidabil","breloc AirTag");
+        
+        Smartwatch[] s={s1,s2,s3,s4,s5,s6,s7,s8,s9,s10};
+        
+        //System.out.println(s1);
+        
+        for(int i=0;i<s.length;i++)      //i=i+2) reda din 2 in 2
+            System.out.println(i+"."+s[i]);
+        System.out.println();
+        
+        AccesoriiSmartwatch[] as={as1,as2,as3,as4,as5,as6,as7,as8,as9,as10};
+        
+        //System.out.println(as1);     System.out.println(as[0]);  afis primul term din vector
+        //System.out.println(as[as,length-1]);  afis ultim term din vector
+        
+        for(int i=0;i<as.length;i++)
+            System.out.println(i+"."+as[i]);
+        System.out.println();
+
+        
     }
     
    
