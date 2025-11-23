@@ -151,6 +151,30 @@ public class MagazinDispozitiveMobile {
         for(int i=0;i<as.length;i++)
             System.out.println(i+"."+as[i]);
         System.out.println();
+        
+        
+        System.out.println("\n  Smartwatch-uri cu pret > 500 lei si sunt fabricate de SAMSUNG ");
+        
+        for (Smartwatch sw : s)
+        {
+            if (sw.getPret()>500 && sw.getBrand().toUpperCase().contains("SAMSUNG"))
+            {System.out.println(sw);}
+        
+        }
+        
+        System.out.println("\n  Smartwatch-uri cu pret < 50 lei si sunt fabricate de CASEY STUDIOS ");
+        
+        for(AccesoriiSmartwatch acc : as)
+        {
+            if(acc.getBrand().toUpperCase().contains("CASEY STUDIOS") && acc.getPret()<50)
+            {System.out.println(acc);}
+        
+        }
+        
+        
+        
+        
+        
 
         
     }
