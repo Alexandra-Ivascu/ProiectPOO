@@ -15,10 +15,10 @@ public class MagazinDispozitiveMobile {
         b1=new BrataraFitness();
         b2=new BrataraFitness("Xiaomi",88.99,true,false,true,true,false,false,true);
         b3=new BrataraFitness(b2);
-        b4=new BrataraFitness("HUAWEI",139.59,true,false,true,true,false,true,true);
-        b5=new BrataraFitness("HUAWEI",99.99,true,false,true,false,false,false,true);
+        b4=new BrataraFitness("HUAWEI",139.59,true,false,false,true,false,true,true);
+        b5=new BrataraFitness("HUAWEI",99.99,true,false,false,false,false,false,true);
         b6=new BrataraFitness("Fitbit",169.99,true,true,true,true,false,true,true);
-        b7=new BrataraFitness("Xiaomi",134.99,true,false,true,true,true,false,true);
+        b7=new BrataraFitness("Xiaomi",134.99,true,false,true,false,true,false,true);
         b8=new BrataraFitness("Samsung",199.99,true,true,true,true,false,false,true);
         b9=new BrataraFitness("Samsung",119.99,true,false,true,true,true,false,true);
         b10=new BrataraFitness(b7);
@@ -32,11 +32,11 @@ public class MagazinDispozitiveMobile {
         ab2=new AccesoriuBrataraFitness("Xiaomi",20.34,"negru","inox",140,false);
         ab3=new AccesoriuBrataraFitness(ab2);
         ab4=new AccesoriuBrataraFitness("Samsung",40.25,"gri","silicon",150,true);
-        ab5=new AccesoriuBrataraFitness("Xiaomi",25.24,"negru","silicon",160,false);
+        ab5=new AccesoriuBrataraFitness("Xiaomi",24.24,"rosu","silicon",160,false);
         ab6=new AccesoriuBrataraFitness("HUAWEI",30.00,"albastru","plastic",170,true);
         ab7=new AccesoriuBrataraFitness("Fitbit",21.34,"negru","silicon",130,false);
         ab8=new AccesoriuBrataraFitness("Samsung",26.30,"roz","silicon",140,true);
-        ab9=new AccesoriuBrataraFitness(ab4);
+        ab9=new AccesoriuBrataraFitness("Samsung",30.30,"roz","plastic",140,true);
         ab10=new AccesoriuBrataraFitness(ab7);
         ArrayList<AccesoriuBrataraFitness> ab=new ArrayList<AccesoriuBrataraFitness>();
         ab.add(ab1);
@@ -170,8 +170,11 @@ public class MagazinDispozitiveMobile {
             {System.out.println(acc);}
         
         }
-        
-        
+        System.out.println();
+        System.out.println("Accesoriu Bratara Fitness: ");
+        AccesoriuBrataraFitness.afisareCuConditii(ab);
+        System.out.println("BrataraFitness: ");
+        BrataraFitness.afisareCuConditii(b);
         
         
         
