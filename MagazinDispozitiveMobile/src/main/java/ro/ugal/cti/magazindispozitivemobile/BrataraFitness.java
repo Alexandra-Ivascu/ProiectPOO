@@ -4,6 +4,9 @@
  */
 package ro.ugal.cti.magazindispozitivemobile;
 
+
+import java.util.Scanner;
+
 /**
  *
  * @author ai402
@@ -143,4 +146,16 @@ public class BrataraFitness extends DispozitivMobil {
      {
          return "bratara fitness";
      }
+     public static void afisareCuConditii(BrataraFitness[] b)
+    {
+        Scanner in;
+        in=new Scanner(System.in);
+        System.out.println("Introduceti pretul maxim: ");
+        double p=in.nextDouble();
+        System.out.println("Doriti functie de monitorizare a somnului?(true/false) ");
+        boolean s=in.nextBoolean();
+        for(int i=0;i<b.length;i++)
+            if(p>=b[i].getPret() && s==b[i].monitorizareSomn)
+                System.out.println(i+"."+b[i]);
+    }
 }
