@@ -86,17 +86,17 @@ public class AccesoriuBrataraFitness extends DispozitivMobil implements Propriet
      {
          return "Accesoriu bratara fitness";
      }
-    public static void afisareCuConditii(ArrayList<AccesoriuBrataraFitness> ab)
+    public static void afisareCuConditii(ArrayList<AccesoriuBrataraFitness> ab,double pretMax,String culoare)
     {
-        Scanner in;
+        /*Scanner in;
         in=new Scanner(System.in);
         System.out.println("Introduceti pretul maxim: ");
         double p=in.nextDouble();
         System.out.println("Introduceti culoarea dorita: ");
         in.nextLine();
-        String c=in.nextLine();
+        String c=in.nextLine();*/
         for(int i=0;i<ab.size();i++)
-            if(p>=ab.get(i).getPret() && c.toLowerCase().equals(ab.get(i).culoare.toLowerCase()))
+            if(pretMax>=ab.get(i).getPret() && culoare.toLowerCase().equals(ab.get(i).culoare.toLowerCase()))
                 System.out.println(i+"."+ab.get(i));
     }
 }
