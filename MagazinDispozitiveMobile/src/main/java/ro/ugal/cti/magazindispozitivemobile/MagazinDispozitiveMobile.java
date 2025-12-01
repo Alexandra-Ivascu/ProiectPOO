@@ -170,12 +170,13 @@ public class MagazinDispozitiveMobile {
             {System.out.println(acc);}
         
         }
+        /*
         System.out.println();
         System.out.println("Accesoriu Bratara Fitness: ");
         AccesoriuBrataraFitness.afisareCuConditii(ab);
         System.out.println("BrataraFitness: ");
         BrataraFitness.afisareCuConditii(b);
-        
+        */
         
         
 
