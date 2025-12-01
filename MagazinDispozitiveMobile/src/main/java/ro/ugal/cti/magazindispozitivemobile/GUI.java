@@ -123,7 +123,11 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel5.setText("pret maxim");
 
-        jTextField2.setText("jTextField2");
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Culoare");
 
@@ -278,6 +282,10 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         loadAllAccesoriuBrataraFitness(Double.parseDouble(jTextField2.getText()),jComboBox1.getSelectedItem().toString());
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
