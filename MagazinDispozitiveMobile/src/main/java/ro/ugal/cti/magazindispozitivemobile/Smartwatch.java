@@ -39,17 +39,26 @@ public class Smartwatch extends DispozitivMobil
     public Smartwatch(Smartwatch smartwatch1)
     {
         
-        //this.brand="HUAWEI";
-        //this.pret=499.00;
-        //this.culoare="negru";
-        //this.model="Midnight";
-        //this.sistemOperare="Android";
-        //this.brand=smartwatch1.brand;
-        //this.pret=smartwatch1.pret;
+        
         this.model=smartwatch1.model;
         this.culoare=smartwatch1.culoare;
         this.sistemOperare=smartwatch1.sistemOperare;
     
+    }
+    
+    public String getCuloare()
+    {
+        return culoare;
+    }
+    
+    public String getModel()
+    {
+        return model;
+    }
+    
+    public String getSistemOperare()
+    {
+        return sistemOperare;
     }
     
     @Override
@@ -58,6 +67,6 @@ public class Smartwatch extends DispozitivMobil
         return super.toString() +"Smartwatch1: brand: "+super.getBrand()+", pret: "+super.getPret()+", culoare: "+culoare+", model: "+model+", sistem de operare: "+sistemOperare;
        
     }
-   
+    
     
 }
