@@ -36,15 +36,20 @@ public class AccesoriiSmartwatch extends DispozitivMobil
     public AccesoriiSmartwatch (AccesoriiSmartwatch accesoriul1)
     {
         super(accesoriul1);
-        //this.brand="BEST ACCESORIES";
-        //this.pret=39.89;
-        //this.material="silicon";
-        //this.tip="curea";
-        //this.brand=accesoriul1.brand;
-        //this.pret=accesoriul1.pret;
+        
         this.material=accesoriul1.material;
         this.tip=accesoriul1.tip;
     
+    }
+    
+    public String getMaterial()
+    {
+        return material;
+    }
+    
+    public String getTip()
+    {
+        return tip;
     }
     
     @Override
