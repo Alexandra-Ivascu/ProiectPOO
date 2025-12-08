@@ -6,12 +6,13 @@ package ro.ugal.cti.magazindispozitivemobile;
 
 
 import java.util.Scanner;
+import java.io.*;
 
 /**
  *
  * @author ai402
  */
-public class BrataraFitness extends DispozitivMobil {
+public class BrataraFitness extends DispozitivMobil implements Proprietati,Serializable{
     private boolean monitorizarePuls;
     private boolean monitorizareTensiune;
     private boolean monitorizareSomn;
@@ -157,5 +158,24 @@ public class BrataraFitness extends DispozitivMobil {
         for(int i=0;i<b.length;i++)
             if(b[i].getPret()<=pretMax && b[i].monitorizareSomn==somn)
                 System.out.println(i+"."+b[i]);
+    }
+      public static void scrieFisierBF(BrataraFitness[] bf, String numeFisier) {
+        try{
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(numeFisier));
+            oos.writeObject(bf);
+            System.out.println("Scriere reusita bratara fitness");
+            oos.close();
+        } catch(Exception e){
+            System.out.println("eroare la scriere in fisier bratara fitness");
+        }
+    }
+      public static BrataraFitness[] citesteBF(String numeFisier){
+        try{
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(numeFisier));
+            return  (BrataraFitness[]) ois.readObject();
+        }catch(Exception e){
+            System.out.println("eroare la citire din fisier bratara fitness");
+            return new BrataraFitness[0];
+        }
     }
 }
