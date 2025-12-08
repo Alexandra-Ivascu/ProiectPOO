@@ -10,7 +10,8 @@ package ro.ugal.cti.magazindispozitivemobile;
  */
 import java.util.Scanner;
 import java.util.ArrayList;
-public class AccesoriuBrataraFitness extends DispozitivMobil implements Proprietati {
+import java.io.*;
+public class AccesoriuBrataraFitness extends DispozitivMobil implements Proprietati,Serializable {
     private String culoare;
     private String material;
     private boolean universal;
@@ -98,5 +99,24 @@ public class AccesoriuBrataraFitness extends DispozitivMobil implements Propriet
         for(int i=0;i<ab.size();i++)
             if(pretMax>=ab.get(i).getPret() && culoare.toLowerCase().equals(ab.get(i).culoare.toLowerCase()))
                 System.out.println(i+"."+ab.get(i));
+    }
+    public static void scrieFisierABF(ArrayList<AccesoriuBrataraFitness> abf, String numeFisier) {
+        try{
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(numeFisier));
+            oos.writeObject(abf);
+            System.out.println("Scriere reusita accesoriu bratara fitness");
+            oos.close();
+        } catch(Exception e){
+            System.out.println("eroare la scriere in fisier accesoriu bratara fitness");
+        }
+    }
+      public static ArrayList<AccesoriuBrataraFitness> citesteABF(String numeFisier){
+        try{
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(numeFisier));
+            return  (ArrayList<AccesoriuBrataraFitness>) ois.readObject();
+        }catch(Exception e){
+            System.out.println("eroare la citire din fisier accesoriu bratara fitness");
+            return new ArrayList<AccesoriuBrataraFitness>();
+        }
     }
 }
