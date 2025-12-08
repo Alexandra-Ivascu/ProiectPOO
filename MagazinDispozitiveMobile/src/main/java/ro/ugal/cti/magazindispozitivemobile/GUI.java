@@ -47,10 +47,12 @@ public class GUI extends javax.swing.JFrame {
         b9=new BrataraFitness("Samsung",119.99,true,false,true,true,true,false,true);
         b10=new BrataraFitness(b7);
         BrataraFitness[] b={b1,b2,b3,b4,b5,b6,b7,b8,b9,b10};
-        for(int i=0;i<b.length;i++)
-            System.out.println(i+"."+b[i]);
+        BrataraFitness.scrieFisierBF(b, "brataraFitness.txt");
+        BrataraFitness[] bFisier=BrataraFitness.citesteBF("brataraFitness.txt");
+        for(int i=0;i<bFisier.length;i++)
+            System.out.println(i+"."+bFisier[i]);
         System.out.println();
-        for( BrataraFitness bf:b){
+        for( BrataraFitness bf:bFisier){
             if(bf.getPret()<=pretMax && bf.getMonitorizareSomn()==somn)
             tbModelBF.addRow(new Object[]{bf.getPret(),bf.getBrand(),bf.getMonitorizarePuls(),bf.getMonitorizareTensiune(),bf.getMonitorizareSomn(),bf.getMonitorizareSpo2(),bf.getMonitorizareCalorii(),bf.getPedometru(),bf.getRezistentaApa()});
         }
@@ -80,8 +82,12 @@ public class GUI extends javax.swing.JFrame {
         ab.add(ab8);
         ab.add(ab9);
         ab.add(ab10);
+        AccesoriuBrataraFitness.scrieFisierABF(ab, "AccesoriuBrataraFitness.txt");
+        ArrayList<AccesoriuBrataraFitness> abFisier=AccesoriuBrataraFitness.citesteABF("AccesoriuBrataraFitness.txt");
+        for(int i=0;i<abFisier.size();i++)
+            System.out.println(i+"."+abFisier.get(i));
         
-        for( AccesoriuBrataraFitness abf:ab){
+        for( AccesoriuBrataraFitness abf:abFisier){
             if(abf.getPret()<=pretMax && abf.getCuloare().toLowerCase().equals(culoare.toLowerCase()))
                 tbModelABF.addRow(new Object[]{abf.getPret(),abf.getBrand(),abf.getCuloare(),abf.getMaterial(),abf.getUniversal()});
         }
