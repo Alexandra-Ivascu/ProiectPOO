@@ -3,12 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ro.ugal.cti.magazindispozitivemobile;
-
+import java.io.*;
 /**
  *
  * @author ai402
  */
-public class DispozitivMobil {
+public class DispozitivMobil implements Serializable {
     private String brand;
     private double pret;
     public DispozitivMobil(){
